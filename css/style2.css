@@ -1,0 +1,398 @@
+html {
+    font-size:  15px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Lobster', cursive, 'Comfortaa', cursive, 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+/* page
+=============== */
+
+.page {
+    width: 100%;
+    height: 100vh;
+    min-height: 770px;
+    position: relative;
+    padding: 1.5rem 1rem 1rem;
+    overflow: auto;
+
+    background: url("../img/Grey_fone.jpg") center no-repeat;
+    background-size: cover;
+}
+
+
+/* header
+=============== */
+
+.header {
+    position: relative;
+    padding: 1rem 1rem;
+
+    border: 1px;
+    box-shadow: 0 -1px 3px #1d1d1d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(174, 174, 216, .4);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo
+=============== */
+
+.logo {
+    height: 100vh;
+    max-height: 769px;
+    position: relative;
+
+    background: url("../img/grey_briks3.jpg") left repeat;
+    background-size: contain;
+}
+
+.logo-bg {
+    display: flex;
+    padding-left: 5rem;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-height: 769px;
+
+    background-color: rgb(114, 114, 114, .4);
+}
+
+
+/* title
+=============== */
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.subtitle.about {
+    padding: 1rem;
+    width: 100%;
+    max-width: 370px;
+
+    background-color: #767695;
+
+    border: 0;
+    border-radius: 5px;
+}
+
+.subtitle.contacts {
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+    max-width: 340px;
+    top: 4rem;
+    left: 25rem;
+
+    background-color: #767695;
+
+    border: 0;
+    border-radius: 5px;
+}
+
+.title-link,
+.subtitle-link {
+    text-decoration: none;
+    color: #fff;
+    transition: opacity .2s linear;
+}
+
+.title-link:hover,
+.subtitle-link:hover {
+    opacity: .7;
+}
+
+
+/* text
+=============== */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text-contacts {
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-top: 170px;
+    margin-left: 325px;
+    width: 50%;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* nav
+=============== */
+
+.nav,
+.contacts {
+    display: flex;
+}
+
+.nav-link,
+.contacts-link {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    margin-left: 1rem;
+}
+
+.nav-link.active {
+    position: relative;
+}
+
+.nav-link.active:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+
+}
+
+.contacts-link {
+    transition: opacity .2s linear;
+}
+
+.contacts-link:hover {
+    opacity: .4;
+}
+
+
+/* img
+=============== */
+
+.img-author {
+    display: block;
+
+    width: 100%;
+    max-width: 614px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+/* footer
+=============== */
+
+.footer {
+    width: 100%;
+    padding: 1rem 3rem;
+    bottom: 10px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fff;
+
+    border: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(174, 174, 216, .4);
+}
+
+.author-name {
+text-transform: capitalize;
+}
+
+.footer-info {
+    margin: 0 auto;
+    text-align: right;
+}
+
+
+/* btn
+=============== */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 360px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.1rem;
+
+
+    border: 0;
+    border-radius: 5px;
+    background-color: #767695;
+
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .2s linear;
+}
+
+.btn-contacts {
+    position: absolute;
+    display: inline-block;
+    bottom: 3rem;
+    left: 405px;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 280px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6rem;
+
+
+    border: 0;
+    border-radius: 5px;
+    background-color: #767695;
+
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .2s linear;
+}
+
+.btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn-contacts:hover {
+    background-color: #616179;
+}
+
+
+/* form
+=============== */
+
+.form {
+    width: 100%;
+    max-width: 280px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-left: 22rem;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(127, 127, 170, .8)
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #fff;
+}
+
+.textarea {
+    height: 200px;
+    resize: none;
+}
+
+
+/* gall
+=============== */
+
+.gall {
+    display: block;
+}
+
+.gall-full {
+    width: 100%;
+    max-width: 1700px;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 2rem;
+}
+
+.img-full {
+    position: relative;
+}
+
+.img-cut {
+    display: inline-block;
+    margin: 0;
+    padding-right: 5px;
+}
+
+
+
+
